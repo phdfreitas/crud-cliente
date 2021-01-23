@@ -114,6 +114,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Login and Logout
+LOGIN_REDIRECT_URL = 'listarClientes'
+
+LOGOUT_REDIRECT_URL = 'login'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/

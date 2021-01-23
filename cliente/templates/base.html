@@ -10,6 +10,11 @@
 
 </head>
 <body>
+    {% if user.is_authenticated %}
+        <span>Bem-vindo, {{user.username}}</span>
+        <span> <a href="{% url 'logout' %}">Sair</a> </span>
+    {% endif %}
+
     <div>
         <h1><a href="{% url 'cadastrarCliente' %}">Novo Cliente</a></h1>
     </div>
