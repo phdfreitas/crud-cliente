@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Django Project - Atualizar dados do Cliente
+    Django Framework - Atualizar dados do Cliente
 {% endblock title %}
 
 {% block content %}
-    <h1>Atualizar Cliente</h1>
-    <form method="post"> {% csrf_token %}
-        {{form.as_p}}
-        <input type="submit" value="Atualizar">
-    </form>
+    <div class="row">
+        <div class="cadastro">
+            <h2>Atualizar Dados do Cliente</h2>
+            <form method="post">{% csrf_token %}
+                <div class="dados-form form-group">
+                    {{form.as_ul}}
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="btn btn-success">Atualizar Informações</button>
+                    <a class="btn btn-primary" href="{% url 'listarClientes' %}">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock content %}

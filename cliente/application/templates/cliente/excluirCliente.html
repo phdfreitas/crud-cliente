@@ -1,14 +1,25 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Django Project - Excluir Cliente
+    Django Framework - Excluir Cliente
 {% endblock title %}
 
 {% block content %}
-    <h1>Excluir Cliente</h1>
-    <h4>Essa operação não poderá ser desfeita.</h4>
-<form method="post"> {% csrf_token %}
-        <p>Você tem certeza que deseja excluir {{cliente.nome}} ?</p>
-        <input type="submit" value="Excluir">
-    </form>
+    <div class="row">
+        <div class="cadastro">
+            <h2>Excluir Cliente</h2>
+            <h4>Essa operação não poderá ser desfeita.</h4>
+            <form method="post">{% csrf_token %}
+                <p>Você tem certeza que deseja excluir <strong>{{cliente.nome}}?</strong> </p>
+                <div class="dados-form form-group">
+                    {{form.as_ul}}
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="btn btn-danger">Excluir Cliente</button>
+                    <a class="btn btn-primary" href="{% url 'listarClientes' %}">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock content %}

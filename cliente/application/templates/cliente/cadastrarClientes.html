@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Django Project - Cadastrar Novo Cliente
+    Django Framework - Cadastrar Novo Cliente
 {% endblock title %}
 
 {% block content %}
-    <h1>Novo Cliente</h1>
-    <form method="post"> {% csrf_token %}
-        {{form.as_p}}
-        <input type="submit" value="Cadastrar">
-    </form>
+    <div class="row">
+        <div class="cadastro">
+            <h2>Novo Cliente</h2>
+            <form method="post">{% csrf_token %}
+                <div class="dados-form form-group">
+                    {{form.as_ul}}
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <a class="btn btn-primary" href="{% url 'listarClientes' %}">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock content %}

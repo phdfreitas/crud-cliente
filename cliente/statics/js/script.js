@@ -3,6 +3,10 @@ function addBootstrapClass(){
     const fields = [
         document.getElementById("id_username"),
         document.getElementById("id_password"),
+        document.getElementById("id_nome"),
+        document.getElementById("id_endereco"),
+        document.getElementById("id_telefone"),
+        document.getElementById("id_data_nascimento"),
     ]
 
     for(let i = 0; i < fields.length; i++){

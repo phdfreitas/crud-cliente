@@ -10,14 +10,16 @@
     .login-title h1{
         font-size: 40px;
     }
+/* Fim Login */
 
-    .login{
+/* Login e Cadastro */
+    .login, .cadastro{
         border: 1px solid #000;
         width: 600px;
         margin: 100px auto;
     }
 
-    .login h2{
+    .login h2, .cadastro h2{
         margin: 10px auto;
         width: 500px;
         text-align: center;
@@ -29,13 +31,25 @@
         text-align: center;
     }
 
-    .login form{
+     .cadastro div.dados-form{
+         font-weight: bold;
+     }
+
+      .cadastro div.dados-form li{
+          padding-bottom: 12px;
+      }
+
+      .cadastro h4{
+          text-align: center;
+      }
+
+    .login form, .cadastro form{
         margin: 25px auto;
         list-style-type: none;
         width: 400px;
     }
 
-    .login div.button{
+    .login div.button, .cadastro div.button{
         text-align: center;
     }
 
