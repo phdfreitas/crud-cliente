@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Django Project - Lista de Clientes
+{% endblock title %}
+
+{% block content %}
+    {% for cliente in object_list %}
+        <hr>
+        <h4>{{cliente.nome}} | {{cliente.endereco}} | {{cliente.telefone}}</h4>
+        <h4>{{cliente.data_nascimento}} | {{cliente.data_cadastro}}</h4>
+        <h4>
+            <a href="{{cliente.get_absolute_url_update}}">Atualizar Cliente</a> |
+            <a href="{{cliente.get_absolute_url_delete}}">Excluir Cliente</a>
+        </h4>
+        <hr>
+{% endfor %}
+{% endblock content %}
