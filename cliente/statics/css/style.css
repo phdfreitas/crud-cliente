@@ -1,0 +1,55 @@
+/* Login */
+    .login-title{
+        background-color: black;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .login-title h1{
+        font-size: 40px;
+    }
+
+    .login{
+        border: 1px solid #000;
+        width: 600px;
+        margin: 100px auto;
+    }
+
+    .login h2{
+        margin: 10px auto;
+        width: 500px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+    }
+
+    .login div.dados-form{
+        text-align: center;
+    }
+
+    .login form{
+        margin: 25px auto;
+        list-style-type: none;
+        width: 400px;
+    }
+
+    .login div.button{
+        text-align: center;
+    }
+
+/* Fim Login */
+
+/* Listar */
+    .listaClientes{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .listaClientes h2{
+        margin-bottom: 15px;
+    }
+
+/* Fim Listar */
