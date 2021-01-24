@@ -2,13 +2,13 @@
 
 ### Escopo do que deve ser realizado
 - [x] Criar um projeto com o Django mais atualizado
-- [x] Criar um Login básico
+- [x] Criar um **Login** básico
 - [x] Criar um Model com 5 campos (nome, endereco, telefone, data_nascimento, data_cadastro)
-- [x] Criar um CRUD do cliente que só seja acessado via Login
+- [x] Criar um **CRUD** do cliente que só seja acessado via Login
 - [x] O campo **data_cadastro** deve ser gravado sempre com a data e hora atual e não precisa aparecer no cadastro
 - [x] Ao entrar no sistema, o mesmo deve ser direcionado para o **Login**
 
-### Sonre o desenvolvimento do projeto
+### Sobre o desenvolvimento do projeto
 - [x] O projeto deve usar **VENV**
 - [x] O código deve ser commitado no github com o repositório de nome **crud-cliente**
 
