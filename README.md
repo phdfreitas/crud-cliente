@@ -18,24 +18,37 @@
 - [x] Pip
 
 ### Passo a Passo
-** **
 **Caso não tenha o **virtualenv** instalado, faça:**
 - No terminal do seu sistema operacional
     >pip install virtualenv
 - Em seguida, faça:
     >pip install virtualenvwrapper
 ** **
+- Faça o clone do repositório. No seu terminal, cole e execute:
+  >git clone https://github.com/phdfreitas/crud-cliente.git
+
 - Crie seu ambiente virtual:
     >mkvirtualenv nome-do-ambiente
+
+- Entre na pasta do repositório:
+  > cd crud-cliente/
+
 - Com o seu ambiente virtual criado e dentro da pasta do projeto, execute:
     >pip install -r requirements.txt
-- Feito isso, entre dentro da pasta **cliente** e execute o seguinte comando:
+
+- Feito isso, entre dentro da pasta **cliente:**
+    > cd cliente/
+
+- Dentro da pasta **cliente**, execute:
     >python manage.py runserver
 
-- Ao executar o comando acima, você pode ir no navegador e digitar:
+- Neste momento, você estará executando a aplicação. 
+
+- Você pode ir no navegador e digitar:
     >localhost:8000/
   
-- Neste momento, você estará executando a aplicação. 
 - Para fazer login, utilize o **usuário e senha** *"admin"* sem as aspas. 
+
 - Pronto, você está dentro do sistema. 
-- Agora você pode testar o CRUD do Cliente. 
+
+- Agora você pode testar o **CRUD** do Cliente. 
