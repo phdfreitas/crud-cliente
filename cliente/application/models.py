@@ -5,9 +5,9 @@ from django.urls import reverse
 
 class Cliente(models.Model):
     nome = models.CharField(max_length=100)
-    endereco = models.CharField(max_length=200)
-    telefone = models.CharField(max_length=15)
-    data_nascimento = models.DateField()
+    endereco = models.CharField('Endereço', max_length=200)
+    telefone = models.CharField(max_length=20)
+    data_nascimento = models.DateField('Data de Nascimento')
     data_cadastro = models.DateTimeField(default=timezone.now)
 
     def get_absolute_url_update(self):
