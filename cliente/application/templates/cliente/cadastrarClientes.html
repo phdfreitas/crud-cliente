@@ -5,19 +5,17 @@
 {% endblock title %}
 
 {% block content %}
-    <div class="row">
-        <div class="cadastro">
-            <h2>Novo Cliente</h2>
-            <form method="post">{% csrf_token %}
-                <div class="dados-form form-group">
-                    {{form.as_ul}}
-                </div>
+    <div class="cadastro">
+        <h2>Novo Cliente</h2>
+        <form method="post">{% csrf_token %}
+            <div class="dados-form form-group">
+                {{form.as_ul}}
+            </div>
 
-                <div class="button">
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
-                    <a class="btn btn-primary" href="{% url 'listarClientes' %}">Voltar</a>
-                </div>
-            </form>
-        </div>
+            <div class="button">
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <a class="btn btn-outline-secondary" href="{% url 'listarClientes' %}">Voltar</a>
+            </div>
+        </form>
     </div>
 {% endblock content %}

@@ -5,18 +5,16 @@
 {% endblock title %}
 
 {% block content %}
-    <div class="row">
-        <div class="login">
-            <h2>Faça seu login</h2>
-            <form method="post">{% csrf_token %}
-                <div class="dados-form form-group">
-                    {{form.as_ul}}
-                </div>
+    <div class="login">
+        <h2>Faça seu login</h2>
+        <form method="post">{% csrf_token %}
+            <div class="dados-form form-group">
+                {{form.as_ul}}
+            </div>
 
-                <div class="button">
-                    <button type="submit" class="btn btn-success">Entrar</button>
-                </div>
-            </form>
-        </div>
+            <div class="button">
+                <button type="submit" class="btn btn-success">Entrar</button>
+            </div>
+        </form>
     </div>
 {% endblock content %}

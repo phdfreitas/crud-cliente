@@ -1,6 +1,6 @@
 /* Login */
     .login-title{
-        background-color: black;
+        background-color: #1979FF;
         text-align: center;
         color: #FFFFFF;
         padding: 20px;
@@ -16,7 +16,7 @@
     .login, .cadastro{
         border: 1px solid #000;
         width: 600px;
-        margin: 100px auto;
+        margin: 80px auto;
     }
 
     .login h2, .cadastro h2{
@@ -25,6 +25,7 @@
         text-align: center;
         border-bottom: 1px solid #000;
         padding-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
     }
 
     .login div.dados-form{
@@ -55,6 +56,52 @@
 
 /* Fim Login */
 
+/* Barra de Navegação Usuário Logado */
+    #pagina-inicial{
+        color: #FFFFFF;
+        font-family: 'Mulish', sans-serif;
+        font-size: 25px;
+    }
+
+    .navbar-color{
+        background-color: #1979FF;
+    }
+
+    .menu-item li{
+        border: 2px solid #FFFFFF;
+        margin: 2px;
+        border-radius: 20px;
+    }
+
+    .menu-item li:hover{
+        background-color: #FFFFFF;
+    }
+
+    .menu-item li:hover a{
+        color: #1979FF;
+    }
+
+    .menu-link{
+        color: #FFFFFF;
+        padding: 5px 10px;
+        font-family: 'Mulish', sans-serif;
+        line-height: 30px;
+    }
+
+    .bem-vindo{
+        width: 40%;
+        margin-top: 8px;
+        text-align: right;
+    }
+
+    .bem-vindo h6{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+/* Fim Barra de navegação Logado */
+
+
 /* Listar */
     .listaClientes{
         width: 90%;
@@ -64,6 +111,7 @@
 
     .listaClientes h2{
         margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
     }
 
 /* Fim Listar */

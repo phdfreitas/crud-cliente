@@ -14,22 +14,24 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     {% if user.is_authenticated %}
-        <header>
+        <header class="menu">
             <nav class="navbar navbar-expand-sm navbar-light navbar-color">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target" style="background-color: #FFFFFF;">
                     <span class="navbar-toggler-icon" style="background-color: #FFFFFF;"></span>
                 </button>
 
                 <div id="nav-target" class="collapse navbar-collapse">
-                    <a href="/" id="pagina-inicial" class="navbar-brand" >Django Project</a>
+                    <a href="/" id="pagina-inicial" class="navbar-brand" >Projeto Django</a>
                         <div  class="bem-vindo">
                             <h6>Bem-vindo, {{user.username}}</h6>
                         </div>
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto menu-item">
                             <li class="nav-item">
                                 <a href="{% url 'cadastrarCliente' %}" class="menu-link">Cadastrar Cliente</a>
                             </li>
@@ -48,7 +50,7 @@
         </header>
     {%else%}
         <header class="login-title">
-            <h1>Django Framework</h1>
+            <h1>Projeto Django</h1>
         </header>
     {% endif %}
 
