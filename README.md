@@ -3,8 +3,8 @@
 ### Escopo do que deve ser realizado
 - [x] Criar um projeto com o Django mais atualizado
 - [x] Criar um **Login** básico
-- [x] Criar um Model com 5 campos (nome, endereco, telefone, data_nascimento, data_cadastro)
-- [x] Criar um **CRUD** do cliente que só seja acessado via Login
+- [x] Criar um Model com 5 campos _(nome, endereco, telefone, data_nascimento, data_cadastro)_
+- [x] Criar um **CRUD** do cliente que só seja acessado via **Login**
 - [x] O campo **data_cadastro** deve ser gravado sempre com a data e hora atual e não precisa aparecer no cadastro
 - [x] Ao entrar no sistema, o mesmo deve ser direcionado para o **Login**
 
@@ -14,41 +14,45 @@
 
 ### Como executar o projeto
 ### Pré-requisitos
-- [x] Python 3.9
+- [x] Python 3.9.x
 - [x] Pip
 
 ### Passo a Passo
-**Caso não tenha o **virtualenv** instalado, faça:**
-- No terminal do seu sistema operacional
-    >pip install virtualenv
-- Em seguida, faça:
-    >pip install virtualenvwrapper
+- Caso não tenha o **virtualenv** instalado, faça:
+  - No terminal do seu sistema operacional:
+      >pip install virtualenv
+  - Em seguida, faça:
+      >pip install virtualenvwrapper
 ** **
-- Faça o clone do repositório. No seu terminal, cole e execute:
-  >git clone https://github.com/phdfreitas/crud-cliente.git
-
-- Crie seu ambiente virtual:
-    >mkvirtualenv nome-do-ambiente
-
-- Entre na pasta do repositório:
-  > cd crud-cliente/
-
-- Com o seu ambiente virtual criado e dentro da pasta do projeto, execute:
-    >pip install -r requirements.txt
-
-- Feito isso, entre dentro da pasta **cliente:**
-    > cd cliente/
-
-- Dentro da pasta **cliente**, execute:
-    >python manage.py runserver
-
-- Neste momento, você estará executando a aplicação. 
-
-- Você pode ir no navegador e digitar:
-    >localhost:8000/
+- Se já instalou o **virtualenv**:
+  - Faça o clone do repositório. No terminal do seu sistema operacional, execute:
+    >git clone https://github.com/phdfreitas/crud-cliente.git
   
-- Para fazer login, utilize o **usuário e senha** *"admin"* sem as aspas. 
+  - Crie seu ambiente virtual:
+      >mkvirtualenv nome-do-ambiente
+  
+  - Certifique-se de que está usando seu ambiente virtual:
+    > workon nome-do-ambiente
 
-- Pronto, você está dentro do sistema. 
+  - Entre na pasta do repositório:
+    > cd crud-cliente/
 
-- Agora você pode testar o **CRUD** do Cliente. 
+  - Usando o ambiente virtual criado e dentro da pasta do projeto, execute:
+      >pip install -r requirements.txt
+  
+  - Feito isso, entre dentro da pasta **cliente:**
+      > cd cliente/
+  
+  - Dentro da pasta **cliente**, execute:
+      >python manage.py runserver
+  
+  - **Neste momento, você estará executando a aplicação.** 
+  
+  - No navegador de sua preferência, acesse:
+      >localhost:8000/
+    
+  - Para fazer login, utilize o **usuário e senha** *"admin"* sem as aspas. 
+  
+  - Pronto, você está dentro do sistema. 
+  
+  - Agora você pode testar o **CRUD** do Cliente. 
